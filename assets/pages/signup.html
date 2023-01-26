@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
     <!-- bootstrap 5 -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <title>NC || Become a Member</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>NC || Sign Up</title>
 </head>
+
 <body>
-     <!--Header open--->
+    <!--Header open--->
     <header class="header" id="navbar-fixed-top">
         <div class="container">
             <nav class="destop-nav-bar">
@@ -26,10 +28,10 @@
 
                             <a href="./../../index.html" class="header_links">Home</a>
                             <a href="./searchdata.html" class="header_links">Search Our Database</a>
-                            <a href="../pages/member.html" class="header_links active">Become a Member</a>
+                            <a href="../pages/member.html" class="header_links">Become a Member</a>
                             <a href="../pages/memberLogin.html" class="header_links">Member Login</a>
                             <a href="../pages/faqs.html" class="header_links">FAQ’s</a>
-                            <a href="../pages/signup.html" class="header_links">Sign Up</a>
+                            <a href="../pages/signup.html" class="header_links active">Sign Up</a>
                             <!-- <a href="../pages/signin.html" class="header_links">Sign In</a> -->
                             <a href=""><img src="../imgaes/1x/person.png" alt=""></a>
                         </div>
@@ -51,133 +53,86 @@
                 <div class="imglogo"><a href="./../../index.html"><img src="../imgaes/SVG/logo.svg" alt=""></a></div>
                 <div class="item"><a href="/index.html" class="header_links">Home</a></div>
                 <div class="item"><a href="../pages/searchdata.html" class="header_links">Search Our Database</a></div>
-                <div class="item"><a href="../pages/member.html" class="header_links active">Become a Member</a>
+                <div class="item"><a href="../pages/member.html" class="header_links">Become a Member</a>
                 </div>
                 <div class="item"><a href="../pages/memberLogin.html" class="header_links">Member Login</a>
                 </div>
                 <div class="item"><a href="../pages/faqs.html" class="header_links">FAQ’s</a></div>
-                <div class="item"><a href="../pages/signup.html" class="header_links">Sign Up</a></div>
-                <!-- <div class="item"><a href="../pages/signip.html" class="header_links">Sign In</a></div> -->
+                <div class="item"><a href="../pages/signup.html" class="header_links active">Sign Up</a></div>
+                <!-- <div class="item"><a href="../pages/signin.html" class="header_links">Sign In</a></div> -->
                 <div class="item"> <a href=""><img src="../imgaes/1x/person.png" alt=""></a></div>
             </div>
         </div>
     </header>
     <!--  -->
     <!--Banner  -->
-    <section class="banner banner1 d-flex justify-content-center w-100 searchData">
+    <section class="d-flex justify-content-center align-items-center contactBanner">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-lg-6 col-sm-12">
-                    <div class="text-div">
+                <div class="col-lg-12 col-sm-12 d-flex justify-content-center mt-2">
+                    <div class="contactBannerDiv">
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
-                        <h1>Leave <span>
-                            a <br>Review</span>
+                        <h1><span>
+                                Sign Up</span>
                         </h1>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-12">
-                    <div class="inner-img">
-                        <img src="../imgaes/1x/image4.png" alt="">
+
+                <form action="" class="signForm">
+                    <div class="mb-3 col-lg-7 ">
+                        <input type="text" placeholder="First Name">
                     </div>
-                </div>
+                    <div class="mb-3 col-lg-7">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <div class="mb-3 col-lg-7">
+                        <input type="email" placeholder="Email?Username">
+                    </div>
+                    <div class="mb-3 col-lg-7">
+                        <input type="number" placeholder="D.O.B">
+                    </div>
+                    <div class="mb-3 col-lg-7">
+                        <input type="text" placeholder="Create Password">
+                    </div>
+                    <div class="mb-3 col-lg-7">
+                        <input type="text" placeholder="Confirm Password">
+                    </div>
+                    <div class="mb-3 col-lg-7">
+                        <input type="text" placeholder="Business License#">
+                    </div>
+
+                    <div class="mb-3 col-lg-7">
+                        <textarea type="message" name="message" id="" cols="85" rows="7"
+                            placeholder="Business Information"></textarea>
+                    </div>
+                    <div class="fileUpload">
+                        <div>
+                            <input type="file" name="" id="uploadFile">
+                        <label for="uploadFile"
+                            class="w-100 d-flex justify-content-center align-items-center text-center">+ Upload Copy Of
+                            Business License
+                        </div>
+                            <div>
+                                <button type="button" class="Btn">Upload Document</button>
+                            </div>
+                    </div>
+                    <div class="col-lg-12 mb-3 mt-4 text-center">
+                        <button type="button" class="Btn">Create Account</button>
+                        <P class="signPara">Already Have an account? <a href="../pages/signin.html">Sign In </a></P>
+                    </div>
+                </form>
+
             </div>
         </div>
     </section>
     <!--  -->
-    <!--  -->
-    <section class="sectionCstm">
-        <div class="container">
-            <div class="row">
-                <h4>Tell Us About <span>Your Experience</span></h4>
-                <div class="col-lg-12 mb-3 mt-3">
-                    <input type="search" placeholder="First Name" class="inputSearch">
-                </div>
-                <div class="col-lg-12 mb-3 mt-3">
-                    <input type="search" placeholder="Last Name" class="inputSearch">
-                </div>
-                <div class="col-lg-12 mb-3 mt-3">
-                    <input type="email" placeholder="Email" class="inputSearch">
-                </div>
-                <div class="col-lg-12 mb-3 mt-3">
-                    <input type="tell" placeholder="Contact No." class="inputSearch">
-                </div>
-                <div class="col-lg-12 mb-3 mt-3">
-                    <input type="text" placeholder="Address" class="inputSearch">
-                </div>
-                <div class="col-lg-12 mb-3 mt-3">
-                    <input type="text" placeholder="How would you rate this customer?" class="inputSearch">
-                </div>
-                <div class="memberStar">
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                </div>
-                <div class="col-lg-12 mb-3 mt-3">
-                    <input type="text" placeholder="Was the customer easy to work with?" class="inputSearch">
-                </div>
-                <div class="col-lg-2">
-                    <div class="form-check mb-4">
-                        <input type="radio" value="yes" class="checkbox" name="radio-stacked" id="yessuffer" required="">
-                        <label for="" class="pb-2 pr-2 ">Yes</label>
-                    </div>
-                 </div>
-                 <div class="col-lg-2">
-                    <div class="form-check mb-4">
-                        <input type="radio" value="no" class="checkbox" name="radio-stacked" id="yessuffer" required="">
-                        <label for="" class="pb-2 pr-2">No</label>
-                    </div>
-                 </div>
-                 <div class="col-lg-12 mb-3 mt-3">
-                    <input type="text" placeholder="Did the customer pay on time?" class="inputSearch">
-                </div>
-                <div class="col-lg-2">
-                    <div class="form-check mb-4">
-                        <input type="radio" value="yes" class="checkbox" name="radio-stacked" id="yessuffer" required="">
-                        <label for="" class="pb-2 pr-2 ">Yes</label>
-                    </div>
-                 </div>
-                 <div class="col-lg-2">
-                    <div class="form-check mb-4">
-                        <input type="radio" value="no" class="checkbox" name="radio-stacked" id="yessuffer" required="">
-                        <label for="" class="pb-2 pr-2">No</label>
-                    </div>
-                 </div>
-                 <div class="col-lg-12 mb-3 mt-3">
-                    <input type="text" placeholder="Would you recommend this customer to other businesses?" class="inputSearch">
-                </div>
-                <div class="col-lg-2">
-                    <div class="form-check mb-4">
-                        <input type="radio" value="yes" class="checkbox" name="radio-stacked" id="yessuffer" required="">
-                        <label for="" class="pb-2 pr-2 ">Yes</label>
-                    </div>
-                 </div>
-                 <div class="col-lg-2">
-                    <div class="form-check mb-4">
-                        <input type="radio" value="no" class="checkbox" name="radio-stacked" id="yessuffer" required="">
-                        <label for="" class="pb-2 pr-2">No</label>
-                    </div>
-                 </div>
-                 <div class="col-lg-12 mb-3 mt-3">
-                    <textarea type="message" name="message" id="" cols="85" rows="7" placeholder="Description..."></textarea>
-                </div>
-                <div class="d-flex justify-content-end align-items-center col-lg-12 accept">
-                    <input type="radio" value="no" class="checkbox" name="radio-stacked" id="yessuffer" required="">
-                        <label for="" class="pr-2">Accept Term & Condition</label>    
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--  -->
-     <!-- footer -->
-     <section class="footer mt-4">
+    <!-- footer -->
+    <section class="footer mt-4">
         <div class="container pt-5 pb-5">
             <div class="row d-flex justify-content-around align-items-baseline">
                 <div class="col-lg-3 col-md-12 col-sm-12 search">
@@ -237,7 +192,6 @@
             </div>
         </div>
     </section>
-
     <!--  -->
     <!-- jquery -->
     <script src="../js/jquery.min.js"></script>
@@ -245,6 +199,6 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- custom js -->
     <script src="../js/main.js"></script>
-    
 </body>
+
 </html>

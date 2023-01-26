@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,9 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <title>Document</title>
+    <title>NC || FAQS</title>
 </head>
+
 <body>
     <!--Header open--->
     <header class="header" id="navbar-fixed-top">
@@ -24,11 +26,13 @@
                     <div class="link">
                         <div class="d-flex justify-content-end">
 
-                            <a href="./../../index.html">Home</a>
-                            <a href="./searchdata.html">Search Our Database</a>
-                            <a href="../pages/member.html">Become a Member</a>
-                            <a href="../pages/memberLogin.html">Member Login</a>
-                            <a href="../pages/faqs.html">FAQ’s</a>
+                            <a href="./../../index.html" class="header_links">Home</a>
+                            <a href="./searchdata.html" class="header_links">Search Our Database</a>
+                            <a href="../pages/member.html" class="header_links">Become a Member</a>
+                            <a href="../pages/memberLogin.html" class="header_links">Member Login</a>
+                            <a href="../pages/faqs.html" class="header_links active">FAQ’s</a>
+                            <a href="../pages/signup.html" class="header_links">Sign Up</a>
+                            <!-- <a href="../pages/signin.html" class="header_links">Sign In</a> -->
                             <a href=""><img src="../imgaes/1x/person.png" alt=""></a>
                         </div>
                     </div>
@@ -47,20 +51,22 @@
         <div id="box" class="">
             <div id="items">
                 <div class="imglogo"><a href="./../../index.html"><img src="../imgaes/SVG/logo.svg" alt=""></a></div>
-                <div class="item"><a href="/index.html">Home</a></div>
-                <div class="item"><a href="../pages/searchdata.html">Search Our Database</a></div>
-                <div class="item"><a href="../pages/member.html">Become a Member</a>
+                <div class="item"><a href="/index.html" class="header_links">Home</a></div>
+                <div class="item"><a href="../pages/searchdata.html" class="header_links">Search Our Database</a></div>
+                <div class="item"><a href="../pages/member.html" class="header_links">Become a Member</a>
                 </div>
-                <div class="item"><a href="../pages/memberLogin.html">Member Login</a>
+                <div class="item"><a href="../pages/memberLogin.html" class="header_links">Member Login</a>
                 </div>
-                <div class="item"><a href="">FAQ’s</a></div>
+                <div class="item"><a href="../pages/faqs.html" class="header_links active">FAQ’s</a></div>
+                <div class="item"><a href="../pages/signup.html" class="header_links">Sign Up</a></div>
+                <!-- <div class="item"><a href="../pages/signin.html" class="header_links">Sign In</a></div> -->
                 <div class="item"> <a href=""><img src="../imgaes/1x/person.png" alt=""></a></div>
             </div>
         </div>
     </header>
     <!--  -->
     <!--Banner  -->
-    <section class="d-flex justify-content-center align-items-center contactBanner">
+    <section class="d-flex justify-content-center align-items-center contactBanner faqsDiv">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-lg-12 col-sm-12 d-flex justify-content-center mt-2">
@@ -78,26 +84,133 @@
                 </div>
                 <div class="mt-5">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Item #1
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in felis dignissim,
-                                    imperdiet nulla vitae, condimentum nulla. Ut scelerisque a nisl sit amet facilisis.
-                                    Etiam blandit iaculis tellus, vitae condimentum leo congue a. Vivamus in vehicula massa.
-                                    Pellentesque libero libero, commodo lacinia volutpat non, tincidunt at lectus. Maecenas
-                                    ipsum turpis, viverra vitae lacus eu, fringilla ultricies erat. Aenean hendrerit maximus
-                                    sodales.
+                        <div class="mt-5">
+                            <div class="accordion-item" id="accordionDiv">
+                                <h2 class="accordion-header" id="headingOne">
+                                  <button class="accordion-button" type="button" id="accordionDivBtn" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ?
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                      euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                      minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                      aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                                      vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                                      at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                                      delenit augue duis dolore te feugait nulla facilisi.
+                                    </p>
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
                         </div>
-                    </div>
+                       <div class="mt-5">
+                        <div class="accordion-item" id="accordionDiv">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" id="accordionDivBtn" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ?
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                      euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                      minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                      aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                                      vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                                      at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                                      delenit augue duis dolore te feugait nulla facilisi.
+                                    </p>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+                        <div class="mt-5">
+                            <div class="accordion-item" id="accordionDiv">
+                                <h2 class="accordion-header" id="headingThree">
+                                  <button class="accordion-button collapsed" type="button" id="accordionDivBtn" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ?
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                          euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                          minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                          aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                                          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                                          at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                                          delenit augue duis dolore te feugait nulla facilisi.
+                                        </p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="accordion-item" id="accordionDiv">
+                                <h2 class="accordion-header" id="headingFour">
+                                  <button class="accordion-button collapsed" type="button" id="accordionDivBtn" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ?
+                                  </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                          euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                          minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                          aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                                          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                                          at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                                          delenit augue duis dolore te feugait nulla facilisi.
+                                        </p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="accordion-item" id="accordionDiv">
+                                <h2 class="accordion-header" id="headingFive">
+                                  <button class="accordion-button collapsed" type="button" id="accordionDivBtn" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ?
+                                  </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                          euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                          minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                          aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                                          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                                          at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                                          delenit augue duis dolore te feugait nulla facilisi.
+                                        </p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="accordion-item" id="accordionDiv">
+                                <h2 class="accordion-header" id="headingSix">
+                                  <button class="accordion-button collapsed" type="button" id="accordionDivBtn" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed ?
+                                  </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                          euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                          minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                          aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                                          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                                          at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                                          delenit augue duis dolore te feugait nulla facilisi.
+                                        </p>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -120,6 +233,7 @@
                         <li><a href="./member.html">Become a member</a></li>
                         <li><a href="./memberLogin.html">Member Login</a></li>
                         <li><a href="./faqs.html">FAQ’s</a></li>
+                        <li><a href="./howitwork.html">How it works</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-12 col-sm-12">
@@ -138,11 +252,12 @@
                 <div class="col-lg-3 col-md-12 col-sm-12">
                     <p class="footer-para">Contact Us</p>
                     <ul class="footer-link p-0">
-                        <li class="footer-ancher"><i class="fa-solid fa-phone p"></i><a href="tell:4703884601"
+                        <li class="footer-ancher"><i class="fa-solid fa-phone p"></i><a href="tel:4703884601"
                                 style="padding: 10px">4703884601</a></li>
-                        <li><i class="fa-solid fa-envelope"></i><a href="javascript(0)"
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:webapparel@gmail.com"
                                 style="padding: 10px">sckeenon@gmail.com</a></li>
-                        <li><i class="fa-solid fa-location-dot"></i><a href="javascript(0)" style="padding: 10px">3698
+                        <li><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/DKt5kZgULkunrP5MA"
+                                style="padding: 10px">3698
                                 Burel Mill Dr.buford 30519,
                                 US.</a></li>
                     </ul>
@@ -164,6 +279,12 @@
         </div>
     </section>
     <!--  -->
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- bootstrap jquery -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

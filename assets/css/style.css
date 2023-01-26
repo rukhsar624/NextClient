@@ -135,8 +135,8 @@
     padding: 10px;
 }
 .active, .header_links:hover {
-    border-bottom: 2px solid #EC0169;
-    color: #EC0169;
+    border-bottom: 2px solid #0071BC;
+    color: #0071BC;
   }
 .image-change .active, .weds-img-div{
     border-bottom: 2px solid #FFF;
@@ -546,12 +546,15 @@ span i {
     padding-left: 2rem;
     padding-top: 2rem;
 }
+.searchData{
+    height: 750px;
+}
 /*  */
 /* contact Us */
 .contactBanner{
     position: relative;
     padding-top: 5rem;
-    height: 595px;
+    /* height: 595px; */
 }
 .contactBanner::before{
     content: "";
@@ -561,10 +564,11 @@ span i {
     width: 100%;
     height: 100%;
     background-position: center;
-     background-size: cover; 
-     background-repeat: no-repeat;
-     background: url("../imgaes/1x/conBanner.png");
-     z-index: -1;
+    background-size: cover; 
+    background-repeat: repeat-x;
+    /* background-repeat: no-repeat; */
+    background: url("../imgaes/1x/conBanner.png");
+    z-index: -1;
 }
 .contactBannerDiv{
     /* height: 600px; */
@@ -592,13 +596,216 @@ span i {
     border-radius: 50px;
     box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
 }
+.contForm textarea {
+    padding: 12px 25px;
+    background: #fff;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #0071BC;
+    border-radius: 17px;
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+}
 .contactBannerDiv h1 span{
     font-family: 'Gilroy-Light';
     color: #0071BC;
     font-weight: bold;
 }
 /*  */
+/* sign Up */
+.signForm{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+.signForm input {
+    padding: 12px 25px;
+    background: #fff;
+    border: none;
+    width: 100%;
+    outline: none;
+    border-radius: 50px;
+    font-family: "Gilroy-Light";
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+}
+.signForm textarea {
+    padding: 12px 25px;
+    background: #fff;
+    border: none;
+    width: 100%;
+    outline: none;
+    border-radius: 17px;
+    font-family: "Gilroy-Light";
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+}
+.signForm input::placeholder{
+    color: #4D4D4D;
+}
+.signPara{
+    margin-top: 2rem;
+    font-family: "Gilroy-Light";
+    color: #000;
+}
+.signPara a{
+    text-decoration: none;
+    font-family: "Gilroy-Light";
+    color: #0071BC; 
+    font-weight: bold;
+}
+#uploadFile {
+  display: none;
+  background-color: var(--headings-primary-color);
+}
+.fileUpload label{
+    font-family: "Gilroy-Light";
+    padding-right: 2rem;
+}
+.fileUpload{
+    display: flex;
+    justify-content: end;
+    width: 750px;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.signPara1 a{
+    font-family: "Gilroy-Light";
+    color: #0071BC;
+    text-decoration: none;
+}
+/* sign */
+.signDiv{
+    height: 596px;
+}
+/*  */
+/* forgetpassword  */
+.forgetpassword{
+    height: 596px;
+}
+/*  */
+/* How It work */
+.ParahowItworks{
+    color: #4D4D4D;
+    font-family: "Gilroy-Light";
+    text-align: center;
+    margin-top: 1rem;
+}
+.memberStar{
+    margin-left: 3rem;
+}
+.sectionCstm textarea{
+    padding: 12px 25px;
+    background: #fff;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #0071BC;
+    border-radius: 20px;
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+}
+.accept input{
+    margin-right: 10px;
+}
+.accept label{
+    color: #0071BC;
+    font-family: "Gilroy-Light";
+    padding-right: 2rem;
 
+}
+/*  */
+/* Faqs */
+#accordionDiv{
+    border-radius: 31px;
+    border: none;
+    background-color: #fff;
+    font-family: "Gilroy-Light";
+    outline: none;
+    color: #4D4D4D;
+}
+#accordionDivBtn{
+    border-radius: 31px;
+    border: none;
+    background-color: #fff;
+    font-family: "Gilroy-Light";
+    outline: none;
+    color: #4D4D4D;
+    outline-style: none;
+
+}
+/*  */
+/* Pakages */
+.packagesBanner {
+    position: relative;
+    padding-top: 5rem;
+    height: 500px;
+}
+.packagesBanner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(../imgaes/1x/banner1.png);
+    z-index: -1;
+}
+/* .packagesBanner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background: url("../imgaes/1x/pakages.png");
+     background-position: center;
+     background-size: cover; 
+     background-repeat: no-repeat;
+     z-index: -1;
+} */
+/*  */
+/* Customer Search Result */
+.InnerBox{
+    background-color: #fff;
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+    margin-top: 3rem;
+}
+.InnerBox:hover{
+    background-color: #0071BC;
+    color: #fff;
+}
+.matchResult span{
+    color: #0071BC;
+
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-color: #0071BC; */
+}
+.circleDivImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circleDivImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+}
+.circular--square { border-radius: 50%; }
+/* .cstmdiv{
+    height: 600px;
+    padding-top: 5rem;
+} */
+/*  */
 
 
 
@@ -665,7 +872,7 @@ and (max-width:1280px) and (max-width:1024px)
 }
 .link a{
     /* margin: 0px 5px; */
-    margin: 0px 30px;
+    margin: 0px 10px;
 }
 }
 @media only screen and (min-width:1440px)
@@ -841,7 +1048,14 @@ and (max-width:1280px) and (max-width:1024px)
     .footer-img {
         margin: 40px auto;
     }
-    
+    .fileUpload{
+        width: 100%;
+        display: flex;
+    flex-direction: column;
+    }
+    .InnerBox{
+        width: 100%;
+    }
     
 }
 @media only screen and (max-width:390px){
