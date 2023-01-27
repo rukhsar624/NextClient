@@ -1,7 +1,7 @@
 // scroll navbar
 $(window).scroll(function () {
 	var scroll = $(window).scrollTop();
-	if (scroll > 100) {
+	if (scroll > 90) {
 		$("#navbar-fixed-top").css("background", "#FFEEEF");
 		$("#navbar-fixed-top").css("box-shadow", "rgb(0 0 0 / 46%) 8px 8px 33px")
 	}
@@ -54,4 +54,26 @@ window.addEventListener('keydown', function (event) {
 		sidebarBtn.classList.remove('active');
 		sidebarBox.classList.remove('active');
 	}
+});
+// show and hide div
+// function showDiv(that) {
+//     var len = document.getElementById('div1').length;
+//     for (var i = 0; i < len; i++) {
+//         document.getElementById('div')[i].style.display = "none";
+//     }
+// var val =  that.value;
+//  document.getElementById(val).style.display = "block";
+// }
+$('.Show').click(function() {
+    $('#target').show(500);
+    $('.Show').hide(0);
+    $('.Hide').show(0);
+});
+$('.Hide').click(function() {
+    $('#target').hide(500);
+    $('.Show').show(0);
+    $('.Hide').hide(0);
+});
+$('.toggle').click(function() {
+    $('#target').toggle('slow');
 });
