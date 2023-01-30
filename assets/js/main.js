@@ -35,7 +35,6 @@ pageWrapper.addEventListener('click', function (event) {
 		sidebarBox.classList.remove('active');
 	}
 });
-
 window.addEventListener('keydown', function (event) {
 
 	if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
@@ -43,25 +42,17 @@ window.addEventListener('keydown', function (event) {
 		sidebarBox.classList.remove('active');
 	}
 });
-// show and hide div
-// function showDiv(that) {
-//     var len = document.getElementById('div1').length;
-//     for (var i = 0; i < len; i++) {
-//         document.getElementById('div')[i].style.display = "none";
-//     }
-// var val =  that.value;
-//  document.getElementById(val).style.display = "block";
-// }
-$('.Show').click(function() {
+$('.Show').click(function() {	
     $('#target').show(500);
     $('.Show').hide(0);
     $('.Hide').show(0);
 });
-$('.Hide').click(function() {
-    $('#target').hide(500);
-    $('.Show').show(0);
-    $('.Hide').hide(0);
-});
-$('.toggle').click(function() {
+// $('.Hide').click(function() {
+//     $('#target').hide(500);
+//     $('.Show').show(0);
+//     $('.Hide').hide(0);
+// });
+$('.toggle',).click(function() {
     $('#target').toggle('slow');
 });
+
