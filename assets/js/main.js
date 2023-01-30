@@ -1,3 +1,4 @@
+new WOW().init();
 // scroll navbar
 $(window).scroll(function () {
 	var scroll = $(window).scrollTop();
@@ -8,19 +9,6 @@ $(window).scroll(function () {
 	else {
 		$("#navbar-fixed-top").css("background", "none");
 		$("#navbar-fixed-top").css("box-shadow", "none")
-
-	}
-})
-// scroll navbar
-$(window).scroll(function () {
-	var scroll = $(window).scrollTop();
-	if (scroll > 100) {
-		$("#register-form").css("background", "#000000");
-		$("#register-form").css("box-shadow", "rgb(0 0 0 / 46%) 8px 8px 33px")
-	}
-	else {
-		$("#register-form").css("background", "none");
-		$("#register-form").css("box-shadow", "none")
 
 	}
 })

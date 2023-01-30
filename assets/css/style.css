@@ -34,7 +34,18 @@
     font-family: 'Gilroy-ExtraBold';
     src: url("../font/FontsFree-Net-Gilroy-ExtraBold.ttf");
 }
-
+/* body */
+body::-webkit-scrollbar{
+    width:12px;
+    height:5px;
+    background-color:#75bdf8;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #003D70;
+    border-radius: 10px;
+}
+/*  */
 #main-content {
     position: relative;
 }
@@ -283,11 +294,11 @@
     font-family: 'Gilroy-Light';
     font-weight: bold;
     color: #0071BC;
-    border: 1px solid #0071BC;
+    border: 1px solid #003D70;
 }
 
 .Btn:hover {
-    background-color: #0071BC;
+    background-color: #003D70;
     color: #fff;
 }
 
@@ -305,7 +316,38 @@
 .Search input::placeholder {
     color: #0071BC;
 }
-
+.Search .input-icons i {
+    position: absolute;
+}
+  
+.Search .input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.Search .icon {
+    padding: 18px;
+    color: #0071BC;
+    min-width: 50px;
+    text-align: center;
+    margin-left: 20px;
+}
+.Search input::placeholder {
+    padding-left: 2.5rem;
+} 
+.Search .input-field {
+    padding: 12px 25px;
+    background: #fff;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #0071BC;
+    border-radius: 50px;
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+}
+.Search::placeholder input{
+    margin-left: 10px;
+}
 .video-box {
     position: relative;
     width: 100%;
@@ -485,7 +527,9 @@
     position: relative;
     padding-top: 3rem;
 }
-
+.BtnZindex{
+    z-index: 1;
+}
 .fifthSection .row {
     display: flex;
     align-items: center;
@@ -527,8 +571,11 @@
     position: absolute;
     top: 497px;
     right: 80px;
-    z-index: -1;
+    z-index: 0;
     box-shadow: rgb(0 0 0 / 25%) 2px 21px 43px 17px;
+}
+.zIndex{
+    z-index: 1;
 }
 
 .whiteDivBtn {
@@ -664,12 +711,28 @@ span i {
 }
 
 /* Search  our database */
-.banner1 {
+.banner1  {
     /* height: 740px; */
     position: relative;
     padding-top: 5rem;
 }
-
+.banner2{
+    position: relative;
+    padding-top: 5rem;
+}
+.banner2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background: url("../imgaes/1x/banner1.png");
+    z-index: -1;
+}
 .banner1::before {
     content: "";
     position: absolute;
@@ -683,7 +746,21 @@ span i {
     background: url("../imgaes/1x/banner1.png");
     z-index: -1;
 }
-
+.banner1::after {
+    content: "";
+    position: absolute;
+    top: 1370px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgaes/1x/pakages.png);
+    background-position: bottom;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background: url("../imgaes/1x/pakages.png");
+    transform: rotate(0deg);
+    z-index: -1;
+}
 .banner1 .text-div i {
     font-size: 2rem;
     color: #0071BC;
@@ -704,9 +781,8 @@ span i {
 }
 
 .sectionCstm h4 span {
-    font-family: 'Gilroy-Light';
+    font-family: 'Gilroy-Bold';
     color: #0071BC;
-    font-weight: bold;
 }
 
 .sectionCstm h5 {
@@ -715,7 +791,18 @@ span i {
     padding-left: 2rem;
     padding-top: 2rem;
 }
+.sectionCstm .span{
+    font-family: 'Gilroy-Light';
+    color: #0071BC;
+    margin-left: 2rem;
 
+}
+.sectionCstm .span1{
+    color: #4D4D4D;
+    font-family: 'Gilroy-Light';
+    margin-left: 2rem;
+
+}
 .searchData {
     height: 750px;
 }
@@ -835,9 +922,9 @@ span i {
 
 .signPara a {
     text-decoration: none;
-    font-family: "Gilroy-Light";
+    font-family: "Gilroy-Bold";
     color: #0071BC;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 #uploadFile {
@@ -853,7 +940,8 @@ span i {
 .fileUpload {
     display: flex;
     justify-content: end;
-    width: 750px;
+    /* width: 750px; */
+    width: 1035px;
     align-items: center;
     margin-bottom: 3rem;
 }
@@ -885,7 +973,7 @@ span i {
 }
 
 .memberStar {
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
 .sectionCstm textarea {
@@ -915,7 +1003,7 @@ span i {
 #accordionDiv {
     border-radius: 31px;
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     font-family: "Gilroy-Light";
     outline: none;
     color: #4D4D4D;
@@ -1302,6 +1390,10 @@ span i {
 
     .text-div {
         width: 610px;
+    }
+    .fileUpload {
+        width: 885px;
+
     }
 }
 
