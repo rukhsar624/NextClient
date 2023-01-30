@@ -367,6 +367,7 @@ body::-webkit-scrollbar-thumb {
 
 .Search::placeholder input {
     margin-left: 10px;
+    padding-left: 10px;
 }
 
 .video-box {
