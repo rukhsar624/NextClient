@@ -55,7 +55,7 @@
         <div id="box" class="">
             <div id="items">
                 <div class="imglogo"><a href="./../../index.html"><img src="../imgaes/SVG/logo.svg" alt=""></a></div>
-                <div class="item"><a href="/index.html" class="header_links">Home</a></div>
+                <div class="item"><a href="./../../index.html" class="header_links">Home</a></div>
                 <div class="item"><a href="../pages/searchdata.html" class="header_links">Search Our Database</a></div>
                 <div class="item"><a href="../pages/member.html" class="header_links">Become a Member</a>
                 </div>
@@ -80,7 +80,6 @@
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
-                        <i class="fa-sharp fa-solid fa-star"></i>
                         <h1 class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s"><span>
                                 Results</span>
                         </h1>
@@ -94,8 +93,8 @@
                     <div class="col-lg-6 mb-3 mt-3 wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                         <input type="search" placeholder="Last Name" class="inputSearch">
                     </div>
-                    <span class="span">*Only Information matching your search criteria will be displayed.</span>
-                <span class="span1">We do not publish address,email or phone numbers</span>
+                    <span><p>*Only Information matching your search criteria will be displayed.</p></span>
+                    <span>We do not publish address,email or phone numbers</span>
                     <h5 class="wow animated bounceIn" data-wow-duration="1s" data-wow-delay="0.5s">Address</h5>
                     <div class="col-lg-12 mb-3 mt-3 wow animated fadeInRight"  data-wow-duration="1s" data-wow-delay="0.5s">
                         <input type="search" placeholder="Short answer" class="inputSearch">
@@ -123,7 +122,7 @@
             </h1>
             <div class="row mt-5">
                 <div class="col-lg-3 col-sm-12 wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <button class="toggle">
+                    <button class="toggle" onclick="displayDiv('target')">
                         <div class="InnerBox">
                             <div class="d-flex p-3 justify-content-center align-items-center">
                                 <div class="circle">
@@ -144,7 +143,7 @@
                     </button>
                 </div>
                 <div class="col-lg-3 wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <button class="toggle">
+                    <button class="toggle" onclick="displayDiv('target1')">
                         <div class="InnerBox">
                             <div class="d-flex p-3 justify-content-center align-items-center">
                                 <div class="circle">
@@ -165,7 +164,7 @@
                     </button>
                 </div>
                 <div class="col-lg-3 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <button class="toggle">
+                    <button class="toggle" onclick="displayDiv('target2')">
                         <div class="InnerBox">
                             <div class="d-flex p-3 justify-content-center align-items-center">
                                 <div class="circle">
@@ -186,7 +185,7 @@
                     </button>
                 </div>
                 <div class="col-lg-3 wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <button class="toggle">
+                    <button class="toggle" onclick="displayDiv('target3')">
                         <div class="InnerBox">
                             <div class="d-flex p-3 justify-content-center align-items-center">
                                 <div class="circle">
@@ -209,7 +208,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <button class="toggle">
+                    <button class="toggle" onclick="displayDiv('target4')">
                         <div class="InnerBox">
                             <div class="d-flex p-3 justify-content-center align-items-center">
                                 <div class="circle">
@@ -230,7 +229,7 @@
                     </button>
                 </div>
                 <div class="col-lg-3 wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <button class="toggle">
+                    <button class="toggle" onclick="displayDiv('target5')">
                         <div class="InnerBox">
                             <div class="d-flex p-3 justify-content-center align-items-center">
                                 <div class="circle">
@@ -251,7 +250,7 @@
                     </button>
                 </div>
                 <div class="col-lg-3 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <button class="toggle">
+                    <button class="toggle" onclick="displayDiv('target6')">
                         <div class="InnerBox">
                             <div class="d-flex p-3 justify-content-center align-items-center">
                                 <div class="circle">
@@ -272,7 +271,7 @@
                     </button>
                 </div>
                 <div class="col-lg-3 wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <button class="toggle">
+                    <button class="toggle" onclick="displayDiv('target7')">
                         <div class="InnerBox">
                             <div class="d-flex p-3 justify-content-center align-items-center">
                                 <div class="circle">
@@ -294,6 +293,279 @@
                 </div>
             </div>
             <div class="row" id="target" >
+                <div class="col-lg-12">
+                    <div class="InnerBox1">
+                        <div class="d-flex p-3 justify-content-center align-items-center">
+                            <div class="circle">
+                                <div class="circleDivImg">
+                                    <img src="../imgaes/1x/image5.png" alt="" class="circular--square">
+                                </div>
+                            </div>
+                            <div>
+                                <h6>John Smith</h6>
+                                <div class="innerBosStar">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <p>09 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mx-auto mt-5">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="target1" >
+                <div class="col-lg-12">
+                    <div class="InnerBox1">
+                        <div class="d-flex p-3 justify-content-center align-items-center">
+                            <div class="circle">
+                                <div class="circleDivImg">
+                                    <img src="../imgaes/1x/image5.png" alt="" class="circular--square">
+                                </div>
+                            </div>
+                            <div>
+                                <h6>John Smith</h6>
+                                <div class="innerBosStar">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <p>09 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mx-auto mt-5">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="target2" >
+                <div class="col-lg-12">
+                    <div class="InnerBox1">
+                        <div class="d-flex p-3 justify-content-center align-items-center">
+                            <div class="circle">
+                                <div class="circleDivImg">
+                                    <img src="../imgaes/1x/image5.png" alt="" class="circular--square">
+                                </div>
+                            </div>
+                            <div>
+                                <h6>John Smith</h6>
+                                <div class="innerBosStar">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <p>09 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mx-auto mt-5">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="target3" >
+                <div class="col-lg-12">
+                    <div class="InnerBox1">
+                        <div class="d-flex p-3 justify-content-center align-items-center">
+                            <div class="circle">
+                                <div class="circleDivImg">
+                                    <img src="../imgaes/1x/image5.png" alt="" class="circular--square">
+                                </div>
+                            </div>
+                            <div>
+                                <h6>John Smith</h6>
+                                <div class="innerBosStar">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <p>09 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mx-auto mt-5">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="target4" >
+                <div class="col-lg-12">
+                    <div class="InnerBox1">
+                        <div class="d-flex p-3 justify-content-center align-items-center">
+                            <div class="circle">
+                                <div class="circleDivImg">
+                                    <img src="../imgaes/1x/image5.png" alt="" class="circular--square">
+                                </div>
+                            </div>
+                            <div>
+                                <h6>John Smith</h6>
+                                <div class="innerBosStar">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <p>09 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mx-auto mt-5">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="target5" >
+                <div class="col-lg-12">
+                    <div class="InnerBox1">
+                        <div class="d-flex p-3 justify-content-center align-items-center">
+                            <div class="circle">
+                                <div class="circleDivImg">
+                                    <img src="../imgaes/1x/image5.png" alt="" class="circular--square">
+                                </div>
+                            </div>
+                            <div>
+                                <h6>John Smith</h6>
+                                <div class="innerBosStar">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <p>09 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mx-auto mt-5">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="target6" >
+                <div class="col-lg-12">
+                    <div class="InnerBox1">
+                        <div class="d-flex p-3 justify-content-center align-items-center">
+                            <div class="circle">
+                                <div class="circleDivImg">
+                                    <img src="../imgaes/1x/image5.png" alt="" class="circular--square">
+                                </div>
+                            </div>
+                            <div>
+                                <h6>John Smith</h6>
+                                <div class="innerBosStar">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <p>09 Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 mx-auto mt-5">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="target7" >
                 <div class="col-lg-12">
                     <div class="InnerBox1">
                         <div class="d-flex p-3 justify-content-center align-items-center">

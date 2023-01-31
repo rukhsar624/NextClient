@@ -1,4 +1,3 @@
-new WOW().init();
 // scroll navbar
 $(window).scroll(function () {
 	var scroll = $(window).scrollTop();
@@ -42,17 +41,31 @@ window.addEventListener('keydown', function (event) {
 		sidebarBox.classList.remove('active');
 	}
 });
-$('.Show').click(function() {	
-    $('#target').show(500);
-    $('.Show').hide(0);
-    $('.Hide').show(0);
-});
-// $('.Hide').click(function() {
-//     $('#target').hide(500);
-//     $('.Show').show(0);
-//     $('.Hide').hide(0);
-// });
-$('.toggle',).click(function() {
-    $('#target').toggle('slow');
-});
+
+
+function displayDiv(target){
+	
+	let display = document.getElementById(target).style.display;
+	if( display==='block'){
+		document.getElementById(target).style.display ='none'
+	}else{
+		document.getElementById(target).style.display ='block'
+	}
+	console.log(display);
+
+}
+// video 
+// Show loading animation.
+var playPromise = video.play();
+
+if (playPromise !== undefined) {
+  playPromise.then(_ => {
+	// Automatic playback started!
+	// Show playing UI.
+  })
+  .catch(error => {
+	// Auto-play was prevented
+	// Show paused UI.
+  });
+}
 

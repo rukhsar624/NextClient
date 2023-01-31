@@ -57,7 +57,6 @@ body::-webkit-scrollbar-thumb {
     width: 20%;
     left: 20px;
     position: absolute;
-    /* top: 10px; */
     top: 0px;
 }
 
@@ -90,6 +89,7 @@ body::-webkit-scrollbar-thumb {
 
 #btn.active {
     right: 12px;
+    border-bottom: 1px solid #ffff;
 }
 
 #btn.active div {
@@ -148,7 +148,7 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    font-family: 'Poppins-Light';
+    font-family: 'Gilroy-Light';
 }
 
 #items .item {
@@ -202,11 +202,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo img {
-    /* width: 50%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex; */
     width: 30%;
     height: 100%;
 }
@@ -237,15 +232,25 @@ body::-webkit-scrollbar-thumb {
 /*  */
 /* banner css */
 .banner {
-    /* height: 740px; */
     position: relative;
     padding-top: 5rem;
     height: 900px;
-    background-position: center;
-    background-size: cover;
-    background-size: cover !important;
-    background-repeat: no-repeat;
+}
+.BtnGroup{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.banner::before {
+    position: absolute;
+    content: "";
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
     background: url("../imgaes/1x/banner.png");
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 .banner::after {
@@ -255,25 +260,57 @@ body::-webkit-scrollbar-thumb {
     height: 260px;
     width: 110px;
     top: 140px;
-    background-image: url(../imgaes/1x/multipleStar.png);
+    background-image: url("../imgaes/1x/multipleStar.png");
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
 }
 
-/* .banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.innerDiv {
+    width: 460px;
+    height: 500px;
+}
+
+.innerDiv img {
     width: 100%;
     height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: url("../imgaes/1x/banner.png");
-    z-index: -1;
-} */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.firstDiv {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 79px;
+    left: 0;
+    top: -45px;
+}
+
+.firstDiv img {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.lastDiv {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 79px;
+    left: -44px;
+    bottom: -28px;
+}
+
+.lastDiv img {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
 
 .text-div {
     width: 650px;
@@ -289,12 +326,53 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
 }
 
-.inner-img {
-    width: 650px;
-    /* height: 600px; */
+.innerDivSectionTwo {
+    width: 460px;
+    height: 500px;
 }
 
-.inner-img img {
+.innerDivSectionTwo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.firstDivSectionTwo {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 79px;
+    left: -44px;
+    top: -28px;
+}
+
+.firstDivSectionTwo img {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.lastDivSectionTwo {
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 79px;
+    right: -125px;
+    bottom: -30px;
+}
+
+.lastDivSectionTwo img {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.innerDivSectionTwo img {
     object-fit: cover;
 }
 
@@ -311,6 +389,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     color: #0071BC;
     border: 1px solid #003D70;
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
 }
 
 .Btn:hover {
@@ -363,8 +442,57 @@ body::-webkit-scrollbar-thumb {
     color: #0071BC;
     border-radius: 50px;
     box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+    font-family: "Gilroy-Bold";
 }
 
+/* form button */
+.banner .example {
+    margin-top: 5rem;
+}
+
+.banner form.example input[type=search] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    /* float: left; */
+    width: 80%;
+    background: #f1f1f1;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+    outline: none;
+    font-family: "Gilroy-Bold";
+}
+
+.banner form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner form.example button {
+    float: left;
+    width: 7%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #0b7dda;
+    font-size: 17px;
+    /* border: 1px solid #0b7dda; */
+    border-left: none;
+    cursor: pointer;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+    border: none;
+}
+
+.banner form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*  */
 .Search::placeholder input {
     margin-left: 10px;
     padding-left: 10px;
@@ -378,6 +506,8 @@ body::-webkit-scrollbar-thumb {
 
 .video-box-width {
     background-image: url("../imgaes/1x/vediobg.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .video-box:hover .overlay {
@@ -419,15 +549,8 @@ body::-webkit-scrollbar-thumb {
 
 /* second-section */
 .second-section {
-    height: 745px;
+    height: 750px;
     position: relative;
-    /* background: url("../imgaes/1x/second-banner.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
-    /* transform: rotate(180deg); */
-    /* padding-top: 3rem; */
-    /* margin-top: 5rem; */
 }
 
 .second-section::before {
@@ -437,9 +560,9 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     width: 100%;
     height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     background: url("../imgaes/1x/banner.png");
     z-index: -1;
     transform: rotate(180deg);
@@ -473,7 +596,8 @@ body::-webkit-scrollbar-thumb {
 
 .second-section .text-div p {
     font-family: 'Gilroy-Light';
-    color: #666666;
+    color: #333333;
+    /* font-size: 1.5rem; */
 }
 
 /* third-section */
@@ -481,6 +605,7 @@ body::-webkit-scrollbar-thumb {
     /* height: 750px; */
     position: relative;
     padding-top: 3rem;
+    padding-bottom: 5rem;
 }
 
 .third-section .text-div {
@@ -511,7 +636,8 @@ body::-webkit-scrollbar-thumb {
 
 .third-section .text-div p {
     font-family: 'Gilroy-Light';
-    color: #666666;
+    color: #333333;
+    /* font-size: 1.5rem; */
 }
 
 /*  */
@@ -522,17 +648,6 @@ body::-webkit-scrollbar-thumb {
     /* height: 499px; */
 }
 
-/* .vedioBg::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #003d70a6;
-    width: 100%;
-    height: 100%;
-    right: 0;
-    z-index: 0;
-} */
 .container-img-bg {
     background: url("../imgaes/1x/vediobg.png");
     width: 100%;
@@ -748,7 +863,7 @@ span i {
 
 .banner2 {
     position: relative;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
 }
 
 .banner2::before {
@@ -799,13 +914,39 @@ span i {
     font-size: 2rem;
     color: #0071BC;
 }
+
 .banner2 .text-div i {
     font-size: 2rem;
     color: #0071BC;
 }
+
 .sectionCstm {
     padding: 1rem;
     margin-top: 6rem;
+}
+
+.sectionCstm label {
+    font-family: "Gilroy-Light";
+    color: #808080;
+
+}
+.sectionCstm{
+    margin-bottom: 5rem;
+    padding-bottom: 3rem;
+}
+.sectionCstm .label label {
+    padding: 12px 25px;
+    background: #fff;
+    border: none;
+    width: 100%;
+    color: #4D4D4D;
+    border-radius: 50px;
+    font-family: "Gilroy-Light";
+    box-shadow: rgb(0 0 0 / 16%) 8px 19px 33px;
+}
+
+.memberStar i {
+    color: #003D70;
 }
 
 .sectionCstm h4 {
@@ -829,14 +970,14 @@ span i {
     padding-top: 2rem;
 }
 
-.sectionCstm .span {
+.sectionCstm span p {
     font-family: 'Gilroy-Light';
     color: #0071BC;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 
 }
 
-.sectionCstm .span1 {
+.sectionCstm span {
     color: #4D4D4D;
     font-family: 'Gilroy-Light';
     margin-left: 2rem;
@@ -920,14 +1061,6 @@ span i {
 
 /*  */
 /* sign Up */
-/* .signForm { */
-/* display: flex;
-    justify-content: center;
-    padding-top: 1.5rem;
-    flex-direction: column;
-    align-items: center; */
-/* } */
-
 .signForm input {
     padding: 12px 25px;
     background: #fff;
@@ -1117,15 +1250,10 @@ span i {
     height: 100%;
     background-position: center;
     background-size: cover;
-    /* background-repeat: no-repeat; */
     background: url("../imgaes/1x/pakagesinner.png");
     z-index: 0;
 }
 
-/* .Monpara {
-    color: #FFF;
-    font-family: "Gilroy-Bold";
-} */
 .pkgSection h4 {
     color: #FFF;
     font-family: "Gilroy-Bold";
@@ -1229,16 +1357,25 @@ span i {
     object-fit: none;
 }
 
-#target {
-    /* background:#0099cc; */
-    /* width:100%;
-    height:400px;
-    height:160px;
-    padding:5px; */
+#target,
+#target1,
+#target2,
+#target3,
+#target4,
+#target5,
+#target6,
+#target7 {
     display: none;
 }
 
-#target p {
+#target,
+#target1,
+#target2,
+#target3,
+#target4,
+#target5,
+#target6,
+#target7 p {
     color: #4D4D4D;
     font-family: "Gilroy-Light";
 }
@@ -1272,16 +1409,6 @@ span i {
 }
 
 /*  */
-
-/* .aboutuspage .banner {
-    height: 70vh;
-    background: url(../1x/aboutusBanner.webp)!important;
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
-    background-position: center!important;
-    width: 100%;
-} */
-
 /* ========================================= */
 /* MEDIA QUERY  */
 /* ========================================= */
@@ -1312,6 +1439,7 @@ span i {
         top: 140px;
 
     }
+    
 }
 
 @media only screen and (min-width:1400px) {
@@ -1333,6 +1461,10 @@ span i {
     #main-content {
         display: none;
     }
+    .banner::after {
+        right: 157px;
+        top: 77px; 
+    }
 }
 
 @media only screen and (min-width:1920px) {
@@ -1345,9 +1477,9 @@ span i {
     .video-box,
     .video-box {
         height: 887px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
     }
 
     .text-div {
@@ -1363,13 +1495,14 @@ span i {
     }
 
     .banner::after {
-        right: 360px;
-        height: 260px;
-        width: 110px;
-        top: 140px;
+        right: 394px;
+    height: 260px;
+    width: 110px;
+    top: 72px;
+}
 
     }
-}
+
 
 @media only screen and (min-width:2550px) {
     #main-content {
@@ -1378,19 +1511,16 @@ span i {
 
     .banner {
         height: 1330px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+
     }
 
     .banner::before {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
     }
 
     .second-section {
-        /* height: 1330px; */
         height: 920px;
 
     }
@@ -1438,8 +1568,13 @@ span i {
         top: 321px;
     }
 
+    .second-section {
+        height: 920px;
+        position: relative;
+    }
+
     .second-section::before {
-        background-position: center !important;
+        background-position: bottom !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
     }
@@ -1454,6 +1589,10 @@ span i {
         background-size: cover !important;
         background-repeat: no-repeat !important;
 
+    }
+
+    .searchData {
+        height: 1327px;
     }
 }
 
@@ -1485,7 +1624,7 @@ span i {
     }
 
     .text-div {
-        width: 610px;
+        width: 550px;
     }
 
     .fileUpload {
@@ -1494,11 +1633,15 @@ span i {
     }
 
     .banner::after {
-        right: 106px;
-        height: 260px;
-        width: 110px;
-        top: 140px;
+        right: 207px;
+    height: 260px;
+    width: 110px;
+    top: 81px;
 
+    }
+    .innerDiv {
+        width: 369px;
+        height: 500px;
     }
 }
 
@@ -1576,6 +1719,10 @@ span i {
         background-repeat: no-repeat !important;
     }
 
+    .text-div {
+        width: 550px;
+    }
+
     .banner1 {
         height: 900px;
 
@@ -1585,6 +1732,17 @@ span i {
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    .searchData {
+        height: 990px;
+    }
+
+    .innerDiv {
+        width: 460px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 3rem;
     }
 }
 
@@ -1658,12 +1816,12 @@ span i {
         margin-top: 2rem;
     }
 
-    .inner-img {
+    .innerDivSectionTwo {
         width: 100%;
         margin-top: 2rem;
     }
 
-    .inner-img img {
+    .innerDivSectionTwo img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -1749,15 +1907,11 @@ span i {
     .banner,
     .second-section::before,
     .second-section::before {
-        /* height: 740px; */
-        /* position: relative;
-        padding-top: 5rem;
-        height: 900px; */
         background-position: center !important;
         background-size: cover !important;
         background-repeat: no-repeat;
         background: url("../imgaes/1x/banner.png");
-        height: 980px;
+        height: 1160px;
     }
 
     *,
@@ -1777,6 +1931,41 @@ span i {
 
     .banner::after {
         display: none;
+    }
+
+    .banner form.example button {
+        width: 16%;
+    }
+
+    .innerDiv {
+        width: 100%;
+    }
+
+    .lastDiv,
+    .innerDivSectionTwo {
+        left: 0;
+    }
+
+    .innerDivSectionTwo {
+        width: 100%;
+    }
+
+    .firstDivSectionTwo {
+        left: 0px;
+    }
+
+    .lastDivSectionTwo {
+        right: 0px;
+
+    }
+    .sectionCstm span{
+        margin-left: 0px;
+    }
+   .sectionCstm span{
+        margin-left: 0px;
+    }
+    .sectionCstm{
+        margin-bottom: 3rem;
     }
 
 }
